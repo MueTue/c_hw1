@@ -3,16 +3,21 @@
 #include <fcntl.h>
 
 
-
-void ft_print_numbers()
+void ft_is_negative(int n)
 {
-    for(int i = 0; i <= 9; i++)
+    if(n >= 0)
     {
-        printf("%d ", i);
+        printf("P");
+    }
+    else
+    {
+        printf("N");
     }
 }
 
+
+
 int main()
 {
-    ft_print_numbers();
+    ft_is_negative(-1);
 }
