@@ -15,7 +15,7 @@ int main()
 {
 
 char string1[] = "Monke";
-char string2[] = "Zebra";
+char string2[] = "Zobra";
 
 
 
