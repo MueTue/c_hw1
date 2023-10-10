@@ -3,23 +3,30 @@
 #include <unistd.h>
 
 
-ft_strcpy(char *dest[], char *src[])
+char ft_strcpy(char *dest, char *src)
 {
+   int i = 0;
 
-*dest = *src;
+   while (src[i])
+   {
+      dest[i] = src[i];
 
+      i++;
+   }
+
+   dest[i] = '\0';
+
+   return dest;
 }
 
 
 int main()
 {
 
-char string1[] = "Monke";
-char string2[] = "Zobra";
+   char string1[] = "Monke";
+   char string2[] = "Zebra";
 
+   ft_strcpy(&string1,&string2);
 
-
-ft_strcpy(&string1,&string2);
-
-   write(1,string1,sizeof(string1));
+   printf(string1);
 }
